@@ -1,5 +1,6 @@
 package ex01;
 
+
 import ex01.model.User;
 
 public class App1 {
@@ -9,13 +10,22 @@ public class App1 {
 
         // 2. dbData1를 ViewData1에 옮기시오 - ORM
         User user = new User(dbData.getUserId(), dbData.getTitle(), dbData.getEmail());
+        ViewData1 viewData1 = new ViewData1(dbData.getBoardId(), dbData.getTitle(), dbData.getContent(), user);
 
-        ViewData1 viewData1 = new ViewData1();
-        viewData1.setBoardId(dbData.getBoardId());
-        viewData1.setTitle(dbData.getTitle());
-        viewData1.setContent(dbData.getContent());
 
-        viewData1.setUser(user);
+        // User user = new User();
+        //
+        //        ViewData1 viewData1 = new ViewData1();
+        //        viewData1.setBoardId(dbData.getBoardId());
+        //        viewData1.setTitle(dbData.getTitle());
+        //        viewData1.setContent(dbData.getContent());
+        //
+        //        user.setUserId();
+        //        user.setContent();
+        //        usdr.setTitle();
+        //        viewData1.setUser(user);
 
+
+        System.out.println(viewData1);
     }
 }

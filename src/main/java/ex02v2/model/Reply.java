@@ -1,4 +1,4 @@
-package ex01.model;
+package ex02v2.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class User {
-    private int userId;
-    private String username;
-    private String email;
+public class Reply {
+    private int replyId;
+    private String comment;
 }

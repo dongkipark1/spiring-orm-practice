@@ -1,4 +1,4 @@
-package ex01.model;
+package ex04.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

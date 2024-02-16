@@ -1,18 +1,16 @@
-package ex01;
+package ex02v2;
 
-
-import ex01.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
-public class ViewData1 {
+public class DBData2 {
     private int boardId;
     private String title;
     private String content;
-
-    private User user;
+    private int replyId;
+    private String comment;
 }

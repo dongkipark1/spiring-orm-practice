@@ -27,4 +27,5 @@ public class ViewData2 {
     public void addReply(Reply reply){
         replies.add(reply);
     }
+
 }
